@@ -47,3 +47,7 @@ This can be found in the `HTA_YouHaveBeenHacked` folder.
 When you click the mouse, a popup appears telling the user that they've been hacked. After clicking OK, the user is asked if they want to unlock their device. If you click cancel, the popup disappears. If you click OK, the following message appears:
 
 >If you want to unlock your device, you will need to refund all your victims, shut down your scam call center, and stop scamming innocent people. Until you stop scamming, your device will be stuck on this screen (and it will be unusable).
+
+# Being Sneaky
+If you want to be sneaky, you can copy the files to the scammer's computer but leave them there without running them. You can then disguise it as an AnyDesk shortcut on their desktop.\
+This repository contains an `icons` folder that has ICO files for the icons of the most common remote access software. You can use these icons to create fake shortcuts.
