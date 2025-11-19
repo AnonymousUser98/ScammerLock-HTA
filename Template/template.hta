@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Device Lockdown</title> <!-- Replace this with the title you want to use. This will be the title that appears on any popup messages created by the alert() command. -->
+	<style>
+		body {
+			background-image: url('background.png'); /* <!-- Change this to the file name of the background image you want to use. --> */
+			/* <!-- To use a solid color background, use the "background-color" property (instead of "background-image"). --> */
+			color: white; /* <!-- This controls the font color for the text. --> */
+			font-family: sans-serif; /* <!-- This can be changed to use a different font. Try using "serif" instead of "sans-serif". --> */
+			/* This "double-language" commenting (HTML comment inside CSS comment) is done to make the comments easier to find in Notepad++. */
+		}
+	</style>
+</head>
+
+<!-- DO NOT CHANGE OR REMOVE THIS IMPORTANT CODE -->
+<hta:application id="oBVC" 
+applicationname="LOCK"  
+version="1.0" 
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+windowstate="maximize"/>
+<!-- END OF IMPORTANT CODE -->
+
+<body scroll="no">
+	<!-- INSERT BODY HTML HERE -->
+</body>
+
+<script language="javascript">
+	// A popup message that looks like a system dialog box will appear whenever the mouse is clicked (as long as there isn't already one open).
+	// This popup will have an OK button that will close it.
+	function noClick() {
+		if ((event.button==1)||(event.button==2)) {
+			alert('Your device is locked.'); // This line controls the message that appears in the popup.
+		}
+	}
+	document.onmousedown=noClick
+</script>
+</html>
