@@ -1,11 +1,11 @@
 # Instructions
-This program is designed for scambaiters to put on scammers' computers (and run them remotely). It will open an HTA file in full-screen and automatically reopen it if it gets closed.\
+This program is designed for scambaiters to put on scammers' computers (and run them remotely). It will open an HTA file in full-screen and automatically reopen it if it gets closed.
 It will also copy itself to the startup folder, so it will still show up even if the scammer restarts their computer.
 
 ## How to use
 First, choose which HTA screen you want to use. You can download the entire repo, or you can go to the releases page to download a ZIP file of just one of the HTA screens.\
 Each HTA screen contains some files. Copy these files to a good location on the scammer's computer (somewhere other than Desktop, Documents, or Downloads so they can't easily find them) and remotely run `lockdown.bat` on their end.\
-And that's it! You're done!
+The scammer's computer is now "locked".
 
 ## Closing the program
 If you press Alt+F4 on your keyboard, the HTA window will close. And then it will instantly reopen.\
